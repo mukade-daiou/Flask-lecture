@@ -1,0 +1,18 @@
+{%extends 'layout.html'%}
+{%block head%}
+<style>
+    img {
+        width: 4%;
+        height: 4%;
+    }
+
+    .rev {
+        transform: scale(-1, 1)
+    }
+</style>
+{%endblock%}
+{%block body%}
+<img class="d-inline rev" src="../static/images/chu.png">
+<h2 class="d-inline">Hello World</h2>
+<img class="d-inline" src="../static/images/chu.png">
+{%endblock%}
