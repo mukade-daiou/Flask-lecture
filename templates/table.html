@@ -1,0 +1,21 @@
+{%extends "layout.html"%}
+{%block body%}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>username</th>
+            <th>grade</th>
+        </tr>
+    </thead>
+    <tbody>
+        {%for member in members%}
+        <tr>
+            <td>{{member['id']}}</td>
+            <td>{{member['username']}}</td>
+            <td>{{member['grade']}}</td>
+        </tr>
+        {%endfor%}
+    </tbody>
+</table>
+{%endblock%}
